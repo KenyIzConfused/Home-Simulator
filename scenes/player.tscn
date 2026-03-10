@@ -6,6 +6,8 @@
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_u8vuu"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3vyb7"]
+radius = 0.390625
+height = 1.9387207
 
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
@@ -14,14 +16,15 @@ script = ExtResource("1_g2els")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+visible = false
 mesh = SubResource("CapsuleMesh_u8vuu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96936035, 0)
 shape = SubResource("CapsuleShape3D_3vyb7")
 
 [node name="Head" type="SpringArm3D" parent="."]
-transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, 0, 1.6650416, -0.0022803247)
+transform = Transform3D(-0.99999994, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -0.99999994, 0, 1.7090273, -0.0022803247)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0.16307998)
