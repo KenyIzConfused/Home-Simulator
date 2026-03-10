@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://da4gd0vhgpwyq"]
+
+[ext_resource type="Texture2D" uid="uid://bkmksd88oro3t" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Flower_Table.png" id="1_wvc6s"]
+
+[resource]
+resource_name = "Flower_Table"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_wvc6s")
+emission_enabled = true

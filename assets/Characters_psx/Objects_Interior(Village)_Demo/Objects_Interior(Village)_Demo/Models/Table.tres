@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bvudkq7q1nk0w"]
+
+[ext_resource type="Texture2D" uid="uid://qwh01mmkc4ay" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Table.png" id="1_v61lo"]
+
+[resource]
+resource_name = "Table"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_v61lo")
+emission_enabled = true

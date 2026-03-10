@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://pu81t7qrqm0q"]
+
+[ext_resource type="Texture2D" uid="uid://dqk73nesoujyj" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Lamp_03.png" id="1_ltsti"]
+
+[resource]
+resource_name = "Lamp_03"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_ltsti")
+emission_enabled = true

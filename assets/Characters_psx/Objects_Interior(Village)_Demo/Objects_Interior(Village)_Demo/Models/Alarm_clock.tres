@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dr4i4o7ns1nlj"]
+
+[ext_resource type="Texture2D" uid="uid://cb21yxcenqsex" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Alarm_clock.png" id="1_japdc"]
+
+[resource]
+resource_name = "Alarm_clock"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_japdc")
+emission_enabled = true

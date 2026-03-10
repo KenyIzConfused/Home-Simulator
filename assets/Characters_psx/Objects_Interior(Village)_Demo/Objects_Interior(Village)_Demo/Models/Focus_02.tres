@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://crkxfnllg3331"]
+
+[ext_resource type="Texture2D" uid="uid://dgtmm2hg714pi" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Focus_02.png" id="1_eg7oo"]
+[ext_resource type="Texture2D" uid="uid://dgk6ac45qtuod" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Focus_02_Emissor.png" id="2_4f3s1"]
+
+[resource]
+resource_name = "Focus_02"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_eg7oo")
+emission_enabled = true
+emission_texture = ExtResource("2_4f3s1")

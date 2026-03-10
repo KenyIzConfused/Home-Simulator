@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://b1nimdh5aghm6"]
+
+[ext_resource type="Texture2D" uid="uid://c0oyfww4dot7q" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Lamp.png" id="1_wrulm"]
+[ext_resource type="Texture2D" uid="uid://dvonwfnl8isi5" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Lamp_Emissor.png" id="2_h5nev"]
+
+[resource]
+resource_name = "Lamp"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_wrulm")
+emission_enabled = true
+emission_texture = ExtResource("2_h5nev")

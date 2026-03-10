@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b1l0ulnwf4qe"]
+
+[ext_resource type="Texture2D" uid="uid://br1if7ng2mr06" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Bookcase.png" id="1_63dna"]
+
+[resource]
+resource_name = "Bookcase"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_63dna")
+emission_enabled = true

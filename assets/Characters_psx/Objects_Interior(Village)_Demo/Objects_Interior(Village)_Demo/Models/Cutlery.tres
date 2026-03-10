@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c3qg71xp7bu6n"]
+
+[ext_resource type="Texture2D" uid="uid://ciiy7gjwuxvg1" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Cutlery.png" id="1_t01lo"]
+
+[resource]
+resource_name = "Cutlery"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_t01lo")
+emission_enabled = true

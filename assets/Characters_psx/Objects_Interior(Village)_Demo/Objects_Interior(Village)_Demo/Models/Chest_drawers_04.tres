@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://d2y5txqu2d0jw"]
+
+[ext_resource type="Texture2D" uid="uid://cysomy4tj5kys" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Chest_drawers_04.png" id="1_xa2af"]
+
+[resource]
+resource_name = "Chest_drawers_04"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_xa2af")
+emission_enabled = true

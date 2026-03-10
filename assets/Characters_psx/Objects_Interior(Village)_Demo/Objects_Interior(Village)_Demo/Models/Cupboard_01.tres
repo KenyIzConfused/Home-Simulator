@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://l0osga4m0eex"]
+
+[ext_resource type="Texture2D" uid="uid://cpls67snjdjvw" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Cupboard_01.png" id="1_2ri2h"]
+
+[resource]
+resource_name = "Cupboard_01"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_2ri2h")
+emission_enabled = true

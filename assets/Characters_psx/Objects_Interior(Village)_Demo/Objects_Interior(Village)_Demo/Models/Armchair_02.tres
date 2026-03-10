@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ddqduh72n2fhv"]
+
+[ext_resource type="Texture2D" uid="uid://becd1urnfuvku" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Armchair_02.png" id="1_a2yep"]
+
+[resource]
+resource_name = "Armchair_02"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_a2yep")
+emission_enabled = true

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b763ndgknvq8n"]
+
+[ext_resource type="Texture2D" uid="uid://csmbngj88k65" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Ceiling_Fan_02.png" id="1_22fn2"]
+
+[resource]
+resource_name = "Ceiling_Fan_02"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_22fn2")
+emission_enabled = true

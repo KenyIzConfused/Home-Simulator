@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dy1mp4e3cqcy5"]
+
+[ext_resource type="Texture2D" uid="uid://dwlonyh5veqkh" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Wood_05.jpg" id="1_7vboj"]
+
+[resource]
+resource_name = "Wood_05"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_7vboj")
+emission_enabled = true

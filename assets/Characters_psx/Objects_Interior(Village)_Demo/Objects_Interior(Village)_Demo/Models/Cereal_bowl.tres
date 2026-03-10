@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://rav6r4ug1flj"]
+
+[ext_resource type="Texture2D" uid="uid://cxghvceiigc5p" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Cereal_bowl.png" id="1_1t4rs"]
+
+[resource]
+resource_name = "Cereal_bowl"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_1t4rs")
+emission_enabled = true

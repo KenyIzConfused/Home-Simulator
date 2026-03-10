@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cd43s5vf5de0k"]
+
+[ext_resource type="Texture2D" uid="uid://c0qn1ku3wk3n3" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Tiles.jpg" id="1_13mdo"]
+
+[resource]
+resource_name = "Tiles"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_13mdo")
+emission_enabled = true

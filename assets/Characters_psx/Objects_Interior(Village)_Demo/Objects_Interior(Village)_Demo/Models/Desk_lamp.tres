@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://br018o607uldh"]
+
+[ext_resource type="Texture2D" uid="uid://cqapv5iqd05km" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Desk_lamp.png" id="1_hbovi"]
+
+[resource]
+resource_name = "Desk_lamp"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_hbovi")
+emission_enabled = true

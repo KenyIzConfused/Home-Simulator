@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://17rnkpmscq8"]
+
+[ext_resource type="Texture2D" uid="uid://cgkgpa14jnmiq" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Books.png" id="1_4f2q2"]
+
+[resource]
+resource_name = "Books"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_4f2q2")
+emission_enabled = true

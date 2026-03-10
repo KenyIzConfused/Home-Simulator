@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgf5n07kn7iri"]
+
+[ext_resource type="PackedScene" uid="uid://ba730xyy4f4ur" path="res://assets/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/Models/Objects_Interior(Village)_Demo.fbx" id="1_2jbq6"]
+
+[node name="Objects_Interior(Village)_Demo" instance=ExtResource("1_2jbq6")]

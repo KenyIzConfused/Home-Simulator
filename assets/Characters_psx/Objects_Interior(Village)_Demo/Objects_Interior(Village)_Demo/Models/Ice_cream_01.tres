@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ycs7t708xqo6"]
+
+[ext_resource type="Texture2D" uid="uid://bjhsu7v2o7pyk" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Ice_cream_01.png" id="1_fliar"]
+
+[resource]
+resource_name = "Ice_cream_01"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_fliar")
+emission_enabled = true

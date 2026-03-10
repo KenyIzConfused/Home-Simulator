@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://u0w4ys0t533i"]
+
+[ext_resource type="Texture2D" uid="uid://6vxb6lh27qvn" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Pizza.png" id="1_8gtia"]
+
+[resource]
+resource_name = "Pizza"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_8gtia")
+emission_enabled = true

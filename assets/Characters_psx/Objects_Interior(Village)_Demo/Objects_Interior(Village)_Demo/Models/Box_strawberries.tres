@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b2wuw2uiqqg2e"]
+
+[ext_resource type="Texture2D" uid="uid://dy7cgheyersbn" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Box_strawberries.png" id="1_31lvg"]
+
+[resource]
+resource_name = "Box_strawberries"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_31lvg")
+emission_enabled = true

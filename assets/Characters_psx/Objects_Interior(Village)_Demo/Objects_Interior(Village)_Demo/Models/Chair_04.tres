@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bxc7ewlgupufb"]
+
+[ext_resource type="Texture2D" uid="uid://yf2vp00srqxf" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Chair_04.png" id="1_uowua"]
+
+[resource]
+resource_name = "Chair_04"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_uowua")
+emission_enabled = true

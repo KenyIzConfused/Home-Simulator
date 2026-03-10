@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://djdvc23fyvtls"]
+
+[ext_resource type="Texture2D" uid="uid://bgsuq1tcwym7n" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/textures/Fitment_02.png" id="1_mjdg0"]
+
+[resource]
+resource_name = "Fitment_02"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_mjdg0")
+emission_enabled = true
