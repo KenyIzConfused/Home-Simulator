@@ -1,0 +1,125 @@
+[gd_scene load_steps=9 format=4 uid="uid://l1fqnyrd8xuk"]
+
+[ext_resource type="Material" uid="uid://cvjo7510imlao" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/Models/Door.tres" id="1_hpvv5"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4pyxo"]
+_surfaces = [{
+"aabb": AABB(-2.0036845, -2.2309713, -0.72008693, 2, 4.4619427, 3.166265),
+"format": 34896613377,
+"index_count": 78,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYACAAJAAoACAALAAkADAAKAAkACwAIAA0ADQAIAAoACwANAA4ADAAPAAoADQAKAA8ADgAPAAwADgANAA8AEAARABIAEAASABEAEAARABMAEAATABEA"),
+"name": "Door",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AAAAABKLAAAAAP//AAAAAAAA//8SiwAAAAAAAAAAAAD/////AAAAAP//AAASiwAA/////xKLAAD//wAAAAAAAHwUaFxtpAAAfBQqiE12AAB8FCqIbaQAAHwUaFxNdgAAkgIqiE12AACSAmhcbaQAAJICaFxNdgAAkgIqiG2kAADfBsh0npUAADAQIHb//wAAMBDIdJ6VAADfBiB2//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vei7p"]
+resource_name = "2_House_Demo_012"
+_surfaces = [{
+"aabb": AABB(-2.0036845, -2.2309713, -0.72008693, 2, 4.4619427, 3.166265),
+"attribute_data": PackedByteArray("+xSwqwQL8dr7FPHaBAuwq3UBAf6J/v0BdQH9AYn+Af4EC7Cr+xTx2gQL8dr7FLCrif4B/nUB/QGJ/v0BdQEB/oIOS6t9B3nAgg55wH0HS6uCDnnAfQdLq4IOS6t9B3nAXQgoj6sRGIpdCBiKqxEoj6sRKI9dCBiKqxEYil0IKI98CfGRRw5Qh3wJUIdHDvGRRw7CgHwJtoh8CcKARw62iHwJwoBHDraIRw7CgHwJtoiiCiiGIA1+mCANKIaiCn6YogoohiANfpiiCn6YIA0ohg=="),
+"format": 34896613399,
+"index_count": 78,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEA"),
+"material": ExtResource("1_hpvv5"),
+"name": "Door",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 52,
+"vertex_data": PackedByteArray("AAAAABKL/z8AAP//AAD/PwAA//8Si/8/AAAAAAAA/z8AAAAAAAAAAP////8AAAAAAAD//wAAAAD//wAAAAAAAP//AAAAAP///////xKL////////AAD/////AAASi/////8AABKLAIAAAP//EosAgP////8SiwCAAAAAABKLAIAAAAAAAACqKv//AAASi6oq//8AAAAAqioAAAAAEouqKv////8AAFTVAAD//xKLVNUAAP//AABU1f////8Si1TVfBRoXG2kAAB8FCqITXYAAHwUKohtpAAAfBRoXE12AACSAmhcTXb/v5ICKohtpP+/kgIqiE12/7+SAmhcbaT/v5ICaFxtpAAAfBQqiG2kAACSAiqIbaQAAHwUaFxtpAAAfBRoXE12/7+SAmhcbaT/v5ICaFxNdv+/fBRoXG2k/7+SAiqITXb/P3wUKohtpP8/fBQqiE12/z+SAiqIbaT/P98GyHSelblAMBAgdv//uUAwEMh0npW5QN8GIHb//7lA3wbIdJ6VuMAwECB2//+4wN8GIHb//7jAMBDIdJ6VuMD/f////3////9/////f///////f////3////9/////f/+//3//v/9//7//f/+//3//f////3////9/////f///VFVUVVRVVFVUVVRVVFVUVVTVqipU1aoqVNWqKlTVqir/P/9//z//f/8//3//P/9//38AAP9/AAD/fwAA/38AAP///3////9/////f////3////9/////f////3////9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/3////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_4pyxo")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_s3ejl"]
+data = PackedVector3Array(-2.0037, -2.231, 1, -2.0037, 2.231, -0.7201, -2.0037, 2.231, 1, -2.0037, -2.231, 1, -2.0037, -2.231, -0.7201, -2.0037, 2.231, -0.7201, -2.0037, -2.231, -0.7201, -0.0037, 2.231, -0.7201, -2.0037, 2.231, -0.7201, -2.0037, -2.231, -0.7201, -0.0037, -2.231, -0.7201, -0.0037, 2.231, -0.7201, -0.0037, -2.231, -0.7201, -0.0037, 2.231, 1, -0.0037, 2.231, -0.7201, -0.0037, -2.231, -0.7201, -0.0037, -2.231, 1, -0.0037, 2.231, 1, -0.0037, -2.231, 1, -2.0037, 2.231, 1, -0.0037, 2.231, 1, -0.0037, -2.231, 1, -2.0037, -2.231, 1, -2.0037, 2.231, 1, -2.0037, -2.231, -0.7201, -0.0037, -2.231, 1, -0.0037, -2.231, -0.7201, -2.0037, -2.231, -0.7201, -2.0037, -2.231, 1, -0.0037, -2.231, 1, -0.0037, 2.231, -0.7201, -2.0037, 2.231, 1, -2.0037, 2.231, -0.7201, -0.0037, 2.231, -0.7201, -0.0037, 2.231, 1, -2.0037, 2.231, 1, -1.8435999, -0.6204, 1.3136, -1.8435999, 0.1423, 0.7431, -1.8435999, 0.1423, 1.3136, -1.8435999, -0.6204, 1.3136, -1.8435999, -0.6204, 0.7431, -1.8435999, 0.1423, 0.7431, -1.9835999, -0.6204, 0.7431, -1.9835999, 0.1423, 1.3136, -1.9835999, 0.1423, 0.7431, -1.9835999, -0.6204, 0.7431, -1.9835999, -0.6204, 1.3136, -1.9835999, 0.1423, 1.3136, -1.9835999, -0.6204, 1.3136, -1.8435999, 0.1423, 1.3136, -1.9835999, 0.1423, 1.3136, -1.9835999, -0.6204, 1.3136, -1.8435999, -0.6204, 1.3136, -1.8435999, 0.1423, 1.3136, -1.8435999, -0.6204, 0.7431, -1.9835999, -0.6204, 1.3136, -1.9835999, -0.6204, 0.7431, -1.8435999, -0.6204, 0.7431, -1.8435999, -0.6204, 1.3136, -1.9835999, -0.6204, 1.3136, -1.9835999, 0.1423, 0.7431, -1.8435999, 0.1423, 1.3136, -1.8435999, 0.1423, 0.7431, -1.9835999, 0.1423, 0.7431, -1.9835999, 0.1423, 1.3136, -1.8435999, 0.1423, 1.3136, -1.9499999, -0.1955, 1.1304, -1.8772, -0.1721, 2.4462, -1.8772, -0.1955, 1.1304, -1.9499999, -0.1955, 1.1304, -1.9499999, -0.1721, 2.4462, -1.8772, -0.1721, 2.4462, -1.9499999, -0.1955, 1.1304, -1.8772, -0.1721, 2.4462, -1.9499999, -0.1721, 2.4462, -1.9499999, -0.1955, 1.1304, -1.8772, -0.1955, 1.1304, -1.8772, -0.1721, 2.4462)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hpvv5"]
+size = Vector3(2.296753, 4.8237524, 20.550774)
+
+[sub_resource type="Animation" id="Animation_hpvv5"]
+resource_name = "door_open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("House_Demo_039:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("House_Demo_039:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.99),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-3.1415925, 0, 0), Vector3(-3.1415927, 1.5707964, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_uvdjg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("House_Demo_039:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("House_Demo_039:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-3.1415925, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_83dcw"]
+_data = {
+&"RESET": SubResource("Animation_uvdjg"),
+&"door_open": SubResource("Animation_hpvv5")
+}
+
+[node name="Door" type="Area3D"]
+collision_mask = 2
+
+[node name="House_Demo_039" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.0622536, 0, 0, 0, 1.0622536, -1.8248706e-08, 0, 1.6039583e-07, 0.12085571, 0, 0, 0)
+layers = 4
+mesh = SubResource("ArrayMesh_vei7p")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="House_Demo_039"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House_Demo_039/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_s3ejl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0410268, 0.048769474, -0.79987717)
+shape = SubResource("BoxShape3D_hpvv5")
+debug_color = Color(0.99509376, 0, 0.21892348, 0.41960785)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_83dcw")
+}

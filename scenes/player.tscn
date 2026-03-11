@@ -11,7 +11,8 @@ height = 1.9387207
 
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
-collision_mask = 254
+collision_layer = 2
+collision_mask = 253
 script = ExtResource("1_g2els")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
