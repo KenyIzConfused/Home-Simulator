@@ -7519,10 +7519,6 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="whatever/2/House_Demo_038/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_t7p3k")
 
-[node name="House_Demo_039" parent="whatever/2" instance=ExtResource("22_sn5rj")]
-transform = Transform3D(-0.50337017, 0, 0, 0, 0.50337017, -8.647516e-09, 0, 7.6006785e-08, 0.057269905, 0.41514397, 1.8061569, 33.980118)
-collision_layer = 1
-
 [node name="bed" type="MeshInstance3D" parent="whatever/2"]
 transform = Transform3D(7.6085565e-09, 0, -0.042550128, 0, 0.042550128, 0, 0.042550128, 0, 7.6085565e-09, -12.980467, 0.3194015, 2.9569378)
 layers = 2
@@ -8550,5 +8546,8 @@ collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("WorldBoundaryShape3D_sn5rj")
+
+[node name="Door" parent="." instance=ExtResource("22_sn5rj")]
+transform = Transform3D(0.4801712, 0, 0, 0, 0.4801712, 0, 0, 0, 0.4801712, 5.8826957, 1.8118231, 9.791703)
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
