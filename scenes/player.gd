@@ -7,9 +7,21 @@ var mouse_captured : bool = false
 var look_rotation : Vector2
 var look_speed : float = 0.0005
 var SENSITIVITY : float = 0.03
+var crouch_height: float = 0.5
+var stand_height: float = 2.0
+var crouching: bool = false
+
 @onready var head: SpringArm3D = $Head
 
 @onready var armsani: AnimationPlayer = $Head/Camera3D/PSX_First_Person_Arms/AnimationPlayer
+
+func crouch():
+	if Input.is_action_just_pressed("crouch"):
+		crouching = !crouching
+		if crouching:
+			$CollisionShape3D.shape.height = crouch_height
+		else:
+			$CollisionShape3D.shape.height = stand_height
 
 func _ready() -> void:
 	armsani.play("Relax_hands_idle_start")
@@ -49,6 +61,9 @@ func rotate_look(rot_input: Vector2):
 	head.rotation.x = look_rotation.x 	
 
 func _physics_process(delta: float) -> void:
+	
+	crouch()
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
