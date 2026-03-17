@@ -1,4 +1,4 @@
-[gd_scene load_steps=578 format=4 uid="uid://5yfj164qt8dk"]
+[gd_scene load_steps=581 format=4 uid="uid://5yfj164qt8dk"]
 
 [ext_resource type="Script" uid="uid://crd3swm0wcbtf" path="res://scenes/proto_map.gd" id="1_edwh1"]
 [ext_resource type="PackedScene" uid="uid://c2f38tct0do1l" path="res://scenes/player.tscn" id="2_hlph6"]
@@ -7064,6 +7064,15 @@ albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_sn5rj"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_myv4k"]
+albedo_color = Color(0.43137255, 1, 0.49019608, 1)
+metallic = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_d1vw4"]
+material = SubResource("StandardMaterial3D_myv4k")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aoxad"]
+
 [node name="ProtoMap" type="Node3D"]
 script = ExtResource("1_edwh1")
 
@@ -8492,7 +8501,7 @@ mesh = SubResource("ArrayMesh_ivbbc")
 skeleton = NodePath("")
 
 [node name="Plate_01" type="MeshInstance3D" parent="whatever/2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5301485, 1.246407, -2.7779083)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2749991, 1.683395, 27.64153)
 mesh = SubResource("ArrayMesh_82oqd")
 skeleton = NodePath("")
 
@@ -8548,5 +8557,16 @@ shape = SubResource("WorldBoundaryShape3D_sn5rj")
 
 [node name="Door" parent="." instance=ExtResource("22_sn5rj")]
 transform = Transform3D(0.4801712, 0, 0, 0, 0.4801712, 0, 0, 0, 0.4801712, 5.8826957, 1.8118231, 9.791703)
+
+[node name="test" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0018117, 1, 4)
+mass = 10.0
+angular_damp = 0.5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="test"]
+mesh = SubResource("BoxMesh_d1vw4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="test"]
+shape = SubResource("BoxShape3D_aoxad")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
