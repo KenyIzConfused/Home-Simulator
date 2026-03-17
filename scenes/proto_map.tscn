@@ -7688,12 +7688,11 @@ skeleton = NodePath("")
 
 [node name="bed_01" type="MeshInstance3D" parent="whatever/2"]
 transform = Transform3D(0.9496747, 0, 0, 0, 0.9496747, 0, 0, 0, 0.9496747, -10.412827, 0.69847393, 20.453526)
-layers = 2
 mesh = SubResource("ArrayMesh_qr2ow")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="whatever/2/bed_01"]
-collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="whatever/2/bed_01/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_uvblf")
