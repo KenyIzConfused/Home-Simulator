@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dr61qfqijsjfy"
-path="res://.godot/imported/2_Cupboard_01.png-23459d158f4c2068da1b3de13061a64d.ctex"
+path.s3tc="res://.godot/imported/2_Cupboard_01.png-23459d158f4c2068da1b3de13061a64d.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "63c3d5e34d7bf980a1f437531e1b70e0"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/Models/2_Cupboard_01.png"
-dest_files=["res://.godot/imported/2_Cupboard_01.png-23459d158f4c2068da1b3de13061a64d.ctex"]
+dest_files=["res://.godot/imported/2_Cupboard_01.png-23459d158f4c2068da1b3de13061a64d.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

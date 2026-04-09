@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyy1vthfdpfda"
-path="res://.godot/imported/2_Ceiling_Fan_02.png-fa00c700a449a4c3cbf65b44ce9ecbfb.ctex"
+path.s3tc="res://.godot/imported/2_Ceiling_Fan_02.png-fa00c700a449a4c3cbf65b44ce9ecbfb.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "997be7ef04b25a1b8ceb1401f0ccff25"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/Models/2_Ceiling_Fan_02.png"
-dest_files=["res://.godot/imported/2_Ceiling_Fan_02.png-fa00c700a449a4c3cbf65b44ce9ecbfb.ctex"]
+dest_files=["res://.godot/imported/2_Ceiling_Fan_02.png-fa00c700a449a4c3cbf65b44ce9ecbfb.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
