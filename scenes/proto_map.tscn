@@ -1,4 +1,4 @@
-[gd_scene load_steps=581 format=4 uid="uid://5yfj164qt8dk"]
+[gd_scene load_steps=582 format=4 uid="uid://5yfj164qt8dk"]
 
 [ext_resource type="Script" uid="uid://crd3swm0wcbtf" path="res://scenes/proto_map.gd" id="1_edwh1"]
 [ext_resource type="PackedScene" uid="uid://c2f38tct0do1l" path="res://scenes/player.tscn" id="2_hlph6"]
@@ -109,6 +109,7 @@
 [ext_resource type="Material" uid="uid://bcnq2g08mjpuy" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/Models/Plates.tres" id="107_6oh27"]
 [ext_resource type="Material" uid="uid://do52oevhrri7u" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/Models/Gadgets.tres" id="108_cobrc"]
 [ext_resource type="Material" uid="uid://c3qg71xp7bu6n" path="res://assets/Characters_psx/Objects_Interior(Village)_Demo/Objects_Interior(Village)_Demo/Models/Cutlery.tres" id="109_02g0o"]
+[ext_resource type="PackedScene" uid="uid://b6dcurjlx03yk" path="res://scenes/killer_1.tscn" id="110_myv4k"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8ubw6"]
 
@@ -8568,5 +8569,8 @@ mesh = SubResource("BoxMesh_d1vw4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="test"]
 shape = SubResource("BoxShape3D_aoxad")
+
+[node name="killer1" parent="." instance=ExtResource("110_myv4k")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6.1173353, 0.4974541, -2.1850066)
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
