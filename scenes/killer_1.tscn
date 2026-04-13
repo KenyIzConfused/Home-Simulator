@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://b6dcurjlx03yk"]
+[gd_scene load_steps=12 format=4 uid="uid://b6dcurjlx03yk"]
 
 [ext_resource type="Texture2D" uid="uid://dyhjmwseelx7n" path="res://assets/Characters_psx/Characters_psx/Textures/Character_Monster_03.png" id="1_qx6uo"]
 [ext_resource type="Script" uid="uid://ci0hx742sbjnw" path="res://scenes/killer_1.gd" id="1_wh37g"]
@@ -1058,6 +1058,8 @@ _data = {
 [sub_resource type="BoxShape3D" id="BoxShape3D_wh37g"]
 size = Vector3(15, 5, 15)
 
+[sub_resource type="SphereMesh" id="SphereMesh_wh37g"]
+
 [node name="killer1" type="Node3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 script = ExtResource("1_wh37g")
@@ -1177,21 +1179,21 @@ bones/15/rest = Transform3D(-0.059098005, -0.9192674, 0.38917184, 0.00038409233,
 bones/15/enabled = true
 bones/15/position = Vector3(-0.12252096, 0.37228832, -0.0021813647)
 bones/15/rotation = Quaternion(0.69846696, -0.3841772, 0.51253253, 0.3191586)
-bones/15/scale = Vector3(1.0000008, 0.99999994, 1.0000006)
+bones/15/scale = Vector3(1.0000011, 1, 1.0000007)
 bones/16/name = "mixamorig_RightArm"
 bones/16/parent = 15
 bones/16/rest = Transform3D(0.9508988, -0.15231694, -0.26942712, 0, 0.87051845, -0.49213573, 0.3095019, 0.4679713, 0.827775, -9.771759e-10, 0.2705474, 6.5811143e-09)
 bones/16/enabled = true
 bones/16/position = Vector3(-0.00055049034, 0.2868087, -0.025221396)
 bones/16/rotation = Quaternion(0.44236028, 0.010603467, -0.020846546, 0.8965324)
-bones/16/scale = Vector3(1.0000014, 0.9999991, 0.999999)
+bones/16/scale = Vector3(1.0000014, 0.9999991, 0.9999988)
 bones/17/name = "mixamorig_RightForeArm"
 bones/17/parent = 16
 bones/17/rest = Transform3D(0.9363256, 0.35100713, -0.009400047, -0.35113296, 0.93599004, -0.025065998, 6.9849193e-09, 0.026770601, 0.9996416, -1.481169e-09, 0.86648, -2.0088569e-08)
 bones/17/enabled = true
 bones/17/position = Vector3(4.0559023e-09, 0.86648, 8.881159e-09)
 bones/17/rotation = Quaternion(0.08545524, -0.10074545, 0.040730834, 0.9903983)
-bones/17/scale = Vector3(1.0000006, 0.9999981, 0.9999994)
+bones/17/scale = Vector3(1.0000026, 0.99999684, 0.99999815)
 bones/18/name = "mixamorig_RightHand"
 bones/18/parent = 17
 bones/18/rest = Transform3D(0.9905745, 0.13697478, 0.000345912, -0.13697523, 0.9905713, 0.0025016556, 1.3213139e-08, -0.0025254574, 0.9999968, 2.5934659e-09, 0.9023288, -1.7736298e-08)
@@ -1313,13 +1315,20 @@ secondary_limit_angle = 1.5707964
 secondary_damp_threshold = 1.0
 
 [node name="LookAtModifier3D2" type="LookAtModifier3D" parent="Character_Monster_03/Skeleton3D"]
-bone_name = "mixamorig_RightShoulder"
-bone = 15
-primary_rotation_axis = 0
+target_node = NodePath("../../../MeshInstance3D")
+bone_name = "mixamorig_RightArm"
+bone = 16
+forward_axis = 2
+primary_rotation_axis = 2
 
 [node name="LookAtModifier3D3" type="LookAtModifier3D" parent="Character_Monster_03/Skeleton3D"]
 bone_name = "mixamorig_RightForeArm"
 bone = 17
+forward_axis = 5
+
+[node name="LookAtModifier3D4" type="LookAtModifier3D" parent="Character_Monster_03/Skeleton3D"]
+bone_name = "mixamorig_RightHand"
+bone = 18
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -1343,3 +1352,8 @@ collision_mask = 32768
 [node name="CollisionShape3D" type="CollisionShape3D" parent="vision"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3432004, 5)
 shape = SubResource("BoxShape3D_wh37g")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -1.8916308, 2.2164617, 0)
+visible = false
+mesh = SubResource("SphereMesh_wh37g")

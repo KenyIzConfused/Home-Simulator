@@ -45,11 +45,29 @@ primary_limit_angle = 3.1415927
 secondary_limit_angle = 4.1887903
 
 [node name="LookAtModifier3D2" parent="killer1/Character_Monster_03/Skeleton3D" index="2"]
-target_node = NodePath("../../../../Player/Head/Camera3D")
+bone_name = "mixamorig_RightShoulder"
+bone = 15
 
 [node name="LookAtModifier3D3" parent="killer1/Character_Monster_03/Skeleton3D" index="3"]
+target_node = NodePath("../../../../Player/Head/Camera3D")
+bone_name = "mixamorig_RightArm"
+bone = 16
+forward_axis = 2
+primary_rotation_axis = 2
+use_angle_limitation = true
+symmetry_limitation = true
+primary_limit_angle = 3.1415927
+primary_damp_threshold = 1.0
+secondary_limit_angle = 3.1415927
+secondary_damp_threshold = 1.0
+
+[node name="LookAtModifier3D4" parent="killer1/Character_Monster_03/Skeleton3D" index="4"]
 target_node = NodePath("../../../../Player/Head")
-primary_rotation_axis = 0
+forward_axis = 2
+primary_rotation_axis = 2
+
+[node name="vision" parent="killer1" index="4"]
+collision_mask = 2
 
 [node name="Player" parent="." instance=ExtResource("2_5gy35")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 2.389486, 0.5692422, -1.9415892)
