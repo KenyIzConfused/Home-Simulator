@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://dt0lvc2asa6ri"]
+
+[ext_resource type="PackedScene" uid="uid://b6dcurjlx03yk" path="res://scenes/killer_1.tscn" id="1_8l12p"]
+[ext_resource type="PackedScene" uid="uid://c2f38tct0do1l" path="res://scenes/player.tscn" id="2_5gy35"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5gy35"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+energy_multiplier = 1.25
+
+[sub_resource type="Sky" id="Sky_xewvm"]
+sky_material = SubResource("ProceduralSkyMaterial_5gy35")
+
+[sub_resource type="Environment" id="Environment_mh5lx"]
+background_mode = 2
+sky = SubResource("Sky_xewvm")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="proto-map2" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_mh5lx")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.9077775, 0, 0.4194521, -0.097321086, 0.97271115, 0.21062212, -0.40800574, -0.23201954, 0.88300526, 0, 0, 0)
+light_color = Color(1, 0.78431374, 0.42352942, 1)
+shadow_enabled = true
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+use_collision = true
+collision_mask = 3
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+size = Vector3(10, 1, 10)
+
+[node name="killer1" parent="." instance=ExtResource("1_8l12p")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.0573587, 0.50689936, 0.8067827)
+
+[node name="LookAtModifier3D" parent="killer1/Character_Monster_03/Skeleton3D" index="1"]
+target_node = NodePath("../../../../Player/Head")
+primary_limit_angle = 3.1415927
+secondary_limit_angle = 4.1887903
+
+[node name="LookAtModifier3D2" parent="killer1/Character_Monster_03/Skeleton3D" index="2"]
+target_node = NodePath("../../../../Player/Head/Camera3D")
+
+[node name="LookAtModifier3D3" parent="killer1/Character_Monster_03/Skeleton3D" index="3"]
+target_node = NodePath("../../../../Player/Head")
+primary_rotation_axis = 0
+
+[node name="Player" parent="." instance=ExtResource("2_5gy35")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 2.389486, 0.5692422, -1.9415892)
+
+[editable path="killer1"]
+[editable path="Player"]
+[editable path="Player/Head/Camera3D/PSX_First_Person_Arms"]
